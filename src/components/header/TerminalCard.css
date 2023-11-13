@@ -1,0 +1,45 @@
+/* TerminalCard.css */
+.terminal-card {
+    background-color: #2e2e2e; /* Terminal background color */
+    color: #ffffff; /* Terminal text color */
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.terminal-header {
+    background-color: #1e1e1e; /* Header background color */
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.terminal-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.terminal-close {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ff5f56; /* Close button color */
+}
+
+.terminal-open {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #51ee3b; /* Close button color */
+}
+.terminal-resize {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #e1a62c; /* Close button color */
+}
+
+.terminal-content {
+    padding: 20px;
+}
