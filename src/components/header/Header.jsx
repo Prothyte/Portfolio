@@ -17,33 +17,49 @@ const Header = () => {
             if (index > targetText.length) {
                 clearInterval(typingInterval);
             }
-        }, 200);
+        }, 500);
 
         return () => clearInterval(typingInterval);
     }, []);
   return (
-      <div className="text-white min-h-screen flex items-center justify-center">
-          <div className="max-w-3xl mx-auto text-left">
-              <h1 className="text-4xl font-extrabold mb-4 ">
-                  Hello, I'm{' '}
-                  <span className="coding-text">{typedText}<span className="cursor">_</span></span>
-              </h1>
-              <p className="text-lg mb-8">
-                  A Software Developer based in Eastern Slovakia.
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <TerminalCard
-                      title="About Me"
-                      content="Greetings! I'm a student pursuing my studies in Informatics at a Technical University
-                      of Kosice."
-                  />
+      <React.Fragment>
+          <div className="text-white min-h-[80vh] flex items-center justify-center">
+              <div className="max-w-3xl mx-auto text-left">
+                  <h1 className="text-4xl font-extrabold mb-4 ">
+                      Hello, I'm{' '}
+                      <span className="coding-text">{typedText}<span className="cursor">_</span></span>
+                  </h1>
+                  <p className="text-lg mb-8">
+                      A Software Developer based in Slovakia.
+                  </p>
+                  <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2">
                       <TerminalCard
-                          title="What I do"
-                          content="Lorem ipsum"
+                          title="About Me"
+                          content="Greetings! I'm a student pursuing my studies in Informatics at a Technical University of Kosice. I'm mainly focused in python and full-stack development"
                       />
+                      <TerminalCard
+                          title="My Expertise"
+                          content=""
+                      />
+                  </div>
+
               </div>
           </div>
-      </div>
+          <div className="tech-stack flex justify-center gap-[5%] opacity-40">
+              <i className="fab fa-html5 fa-2x"></i>
+              <i className="fab fa-css3 fa-2x"></i>
+              <i className="fab fa-js fa-2x"></i>
+              <i className="fab fa-python fa-2x"></i>
+              <i className="fab fa-node fa-2x"></i>
+              <i className="fab fa-react fa-2x"></i>
+              <i className="fab fa-c fa-2x"></i>
+              <i className="fab fa-java fa-2x"></i>
+              <i className="fab fa-git fa-2x"></i>
+          </div>
+          <div className="flex flex-col justify-center items-center h-[20vh] text-center">
+              <div><a href="#about">Scroll down</a></div>
+          </div>
+      </React.Fragment>
   )
 }
 

@@ -54,3 +54,60 @@ header {
 }
 
 
+/* Header.css */
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.text-container {
+    max-width: 80%;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    @media (min-width: 768px) {
+        font-size: 3rem;
+    }
+}
+
+.subtitle {
+    font-size: 1rem;
+    @media (min-width: 768px) {
+        font-size: 1.5rem;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+.scroll-down {
+    margin-top: 32px;
+    font-size: 1rem;
+    @media (min-width: 768px) {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 860px) {
+
+
+}
+
+
+

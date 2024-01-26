@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from 'react'
 import Header from './components/header/Header'
 import About from './components/about/About'
-import Footer from './components/footer/Footer'
 import Spinner from "./components/spinner/Spinner";
 import Particle from "./components/Particle/Particle";
-
+import Footer from './components/footer/Footer'
 
 
 
